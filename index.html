@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="main.css" rel="stylesheet" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Nunito|Orbitron&display=swap" rel="stylesheet">
-        <script src="main.js"></script>
 </head>
 <body>
     <div id="container">
@@ -14,63 +13,37 @@
         </div>
         <div id="calculator">
             <div class="row">
-                <div class="column" id="display">0</div>
+                <div class="column" id="calc-display-val">0</div>
             </div>
             <div class="row">
-                <div class="button column" id="clear">AC</div>
-                <div class="button column" id="delete">CE</div>
-                <div class="button operator-btn column" id="divide">/</div>
+                <div class="calc-btn column" id="calc-clear">AC</div>
+                <div class="calc-btn column" id="calc-backspace">&#8676;</div>
+                <div class="calc-btn calc-btn-operator column" id="calc-divide">&#247;</div>
             </div>
             <div class="row">
-                <div class="button number-btn column" id="seven">7</div>
-                <div class="button number-btn column" id="eight">8</div>
-                <div class="button number-btn column" id="nine">9</div>
-                <div class="button operator-btn column " id="multiply">x</div>
+                <div class="calc-btn calc-btn-num column" id="calc-seven">7</div>
+                <div class="calc-btn calc-btn-num column" id="calc-eight">8</div>
+                <div class="calc-btn calc-btn-num column" id="calc-nine">9</div>
+                <div class="calc-btn calc-btn-operator column " id="calc-multiply">x</div>
             </div>
             <div class="row">
-                <div class="button number-btn column" id="four">4</div>
-                <div class="button number-btn column" id="five">5</div>
-                <div class="button number-btn column" id="six">6</div>
-                <div class="button operator-btn column" id="minus">-</div>
+                <div class="calc-btn calc-btn-num column" id="calc-four">4</div>
+                <div class="calc-btn calc-btn-num column" id="calc-five">5</div>
+                <div class="calc-btn calc-btn-num column" id="calc-six">6</div>
+                <div class="calc-btn calc-btn-operator column" id="calc-minus">-</div>
             </div>
             <div class="row">
-                <div class="button number-btn column" id="one">1</div>
-                <div class="button number-btn column" id="two">2</div>
-                <div class="button number-btn column" id="three">3</div>
-                <div class="button operator-btn column" id="plus">+</div>
+                <div class="calc-btn calc-btn-num column" id="calc-one">1</div>
+                <div class="calc-btn calc-btn-num column" id="calc-two">2</div>
+                <div class="calc-btn calc-btn-num column" id="calc-three">3</div>
+                <div class="calc-btn calc-btn-operator column" id="calc-plus">+</div>
             </div>
             <div class="row">
-                <div class="button number-btn column" id="zero">0</div>
-                <div class="button column" id="decimal">.</div>
-                <div class="button operator-btn column" id="equals">=</div>
+                <div class="calc-btn calc-btn-num column" id="calc-zero">0</div>
+                <div class="calc-btn column" id="calc-decimal">.</div>
+                <div class="calc-btn calc-btn-operator column" id="calc-equals">=</div>
             </div>
         </div>
-    </div>
-    <script>
-        var oneBtn = document.getElementById("one");
-        var twoBtn = document.getElementById("two");
-        var threeBtn = document.getElementById("three");
-        var fourBtn = document.getElementById("four");
-        var fiveBtn = document.getElementById("five");
-        var sixBtn = document.getElementById("six");
-        var sevenBtn = document.getElementById("seven");
-        var eightBtn = document.getElementById("eight");
-        var nineBtn = document.getElementById("nine");
-        var zeroBtn = document.getElementById("zero");
-        var decimalBtn = document.getElementById("decimal");
-        var clearBtn = document.getElementById("clear");
-        var equalsBtn = document.getElementById("equals");
-        var plusBtn = document.getElementById("plus");
-        var minusBtn = document.getElementById("minus");
-        var divideBtn = document.getElementById("divide");
-        var multiplyBtn = document.getElementById("multiply");
-        var backspaceBtn = document.getElementById("delete");
-        var displayValElement = document.getElementById("display");
-        var calcNumBtns = document.getElementsByClassName("number-btn");
-        var calcOperatorBtns = document.getElementsByClassName("operator-btn");
-        var displayNum = '0';
-        var pendingNum;
-        var evalStringArray = [];
-    </script>
+    
 </body>
 </html>

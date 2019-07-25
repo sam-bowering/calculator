@@ -29,7 +29,7 @@ html, body {
     top: 150px; 
 }
 
-#display {
+#calc-display-val {
     background: black;
     width: 97%;
     height: 120px;
@@ -57,7 +57,7 @@ html, body {
     top: 10px;
 }
 
-.button {
+.calc-btn {
     background-color: white;
     color: black;
     width: 25px;
@@ -70,11 +70,11 @@ html, body {
     padding-top: 3px;
 }
 
-.button:hover {
+.calc-button:hover {
     background-color: red;
 }
 
-.operator-btn {
+.calc-btn-operator {
     background-color: red;
     color: white;
 }
