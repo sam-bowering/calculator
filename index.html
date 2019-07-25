@@ -69,7 +69,17 @@
         var displayVal = '0';
         var pendingVal;
         var evalStringArray = [];
-
+        
+        var numberClick = (num) => {
+            if(displayVal === '0')
+                displayVal = '';
+            displayVal += num;
+            displayValElement.innerHTML = displayVal;
+        };
+        var updateDisplayVal = (clickObj) => {
+            let btnText = clickObj.target.innerText;
+            numberClick(btnText);
+        
     </script>
 </body>
 </html>
