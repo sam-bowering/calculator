@@ -79,6 +79,50 @@
         var updateDisplayVal = (clickObj) => {
             let btnText = clickObj.target.innerText;
             numberClick(btnText);
+        };
+        var performOperation = (clickObj) => {
+            var operation = clickObj.target.innerText;
+            switch (operation) {
+                case '+':
+                    pendingVal = Number.parseFloat(displayVal);
+                    displayVal = '';
+                    displayValElement.innerHTML = displayVal;
+                    evalStringArray.push(pendingVal);
+                    evalStringArray.push('+');
+                    break;
+                case '-':
+                    pendingVal = Number.parseFloat(displayVal);
+                    displayVal = '';
+                    displayValElement.innerHTML = displayVal;
+                    evalStringArray.push(pendingVal);
+                    evalStringArray.push('-');
+                    break;
+                case 'x':
+                    pendingVal = Number.parseFloat(displayVal);
+                    displayVal = '';
+                    displayValElement.innerHTML = displayVal;
+                    evalStringArray.push(pendingVal);
+                    evalStringArray.push('*');
+                    break;
+                case '&#247;':
+                    pendingVal = Number.parseFloat(displayVal);
+                    displayVal = '';
+                    displayValElement.innerHTML = displayVal;
+                    evalStringArray.push(pendingVal);
+                    evalStringArray.push('/');
+                    break;
+                case '=':
+                    evalStringArray.push(displayVal);
+                    var evaluation = eval(evalStringArray.join(' '));
+                    displayValElement.innerHTML = evaluation;
+                    displayVal = evaluation;
+                    pendingVal = displayVal;
+                    evalStringArray = [];
+                    displayVal = evaluation + '';
+                    break;
+                default:
+                    break;
+            }
         
     </script>
 </body>
