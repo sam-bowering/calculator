@@ -31,27 +31,50 @@ html, body {
 
 #display {
     background: black;
-    display: inline-block;
-    position: relative;
-    border-radius: 10px 10px 0px 0px;
-    height: 130px;
-    width: 535px;
-    top: 8px;
-}
-
-#display p {
+    width: 97%;
+    height: 120px;
+    border-radius: 15px;
     font-family: 'Orbitron', sans-serif;
+    font-size: 40px;
     color: white;
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    text-align: right;
+    overflow: hidden;
+    white-space: nowrap;
 }
 
 .row {
-    display: block;
-    position: relative;
-    top: 15px;
+    display: table;
+    width: 550px;
+    table-layout: fixed;
 }
 
-.row button {
-    width: 130px;
+.column {
+    display: table-cell;
+    position: relative;
+    top: 10px;
+}
+
+.button {
+    background-color: white;
+    color: black;
+    width: 25px;
     height: 70px;
-    border-radius: 5%;
+    border: 1px solid gray;
+    text-align: center;
+    cursor: pointer;
+    font-size: 32px;
+    font-weight: lighter;
+    padding-top: 3px;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+.operator-btn {
+    background-color: red;
+    color: white;
 }
